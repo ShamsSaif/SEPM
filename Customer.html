@@ -1,3 +1,71 @@
+<!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial}
+form {border: 3px solid #ebebeb;}
 
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(46, 167, 50);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #4690ff;
+}
+
+.container {
+  padding: 16px;
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Login</h2>
+
+<form action="/login.php">
+
+  <div class="container">
+    <label for="user"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="user" required>
+
+    <label for="pass"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pass" required>
+        
+    <button type="submit">Login</button>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Register</button>
+  </div>
+</form>
+
+</body>
 </html>
