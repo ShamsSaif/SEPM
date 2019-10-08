@@ -1,3 +1,9 @@
+create database if not exists sepm;
+
+use sepm;
+
+drop table if exists payments;
+
 CREATE TABLE IF NOT EXISTS `payments` (
     `id` int(6) NOT NULL AUTO_INCREMENT,
     `txnid` varchar(20) NOT NULL,
