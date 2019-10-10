@@ -3,7 +3,7 @@ class Invoice{
 	private $host  = 'localhost';
     private $user  = 'root';
     private $password   = "";
-    private $database  = "phpzag_demo";   
+    private $database  = "sepm";   
 	private $invoiceUserTable = 'invoice_user';	
     private $invoiceOrderTable = 'invoice_order';
 	private $invoiceOrderItemTable = 'invoice_order_item';

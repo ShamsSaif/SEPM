@@ -18,13 +18,13 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 	}
 }
 ?>
-<title>Invoice System</title>
+<title>phpzag.com : Demo Build Invoice System with PHP & MySQL</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>
 <div class="row">	
 	<div class="demo-heading">
-		<h2>Invoice System</h2>
+		<h2>Build Invoice System with PHP & MySQL</h2>
 	</div>
 	<div class="login-form">		
 		<h4>Invoice User Login:</h4>		
@@ -45,7 +45,7 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 			</div>
 		</form>
 		<br>
-		<p><b>Email</b> : s12345@gmail.com<br><b>Password</b> : 12345</p>			
+		<p><b>Email</b> : admin@phpzag.com<br><b>Password</b> : 12345</p>			
 	</div>		
 </div>		
 </div>

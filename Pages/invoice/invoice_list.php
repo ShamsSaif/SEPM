@@ -5,12 +5,12 @@ include 'Invoice.php';
 $invoice = new Invoice();
 $invoice->checkLoggedIn();
 ?>
-<title>Invoice System</title>
+<title>phpzag.com : Demo Build Invoice System with PHP & MySQL</title>
 <script src="js/invoice.js"></script>
 <link href="css/style.css" rel="stylesheet">
 <?php include('container.php');?>
 	<div class="container">		
-	  <h2 class="title">Invoice System</h2>
+	  <h2 class="title">PHP Invoice System</h2>
 	  <?php include('menu.php');?>			  
       <table id="data-table" class="table table-condensed table-striped">
         <thead>
