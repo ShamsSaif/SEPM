@@ -1,3 +1,9 @@
+create database if not exists SEPM;
+
+use SEPM;
+
+drop table if exists invoice_order
+
 CREATE TABLE `invoice_order` (
 `order_id` int(11) NOT NULL,
 `user_id` int(11) NOT NULL,
@@ -11,4 +17,4 @@ CREATE TABLE `invoice_order` (
 `order_amount_paid` decimal(10,2) NOT NULL,
 `order_total_amount_due` decimal(10,2) NOT NULL,
 `note` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ;

@@ -74,17 +74,8 @@ CREATE TABLE `info` (
 
 INSERT INTO `info` (`username`, `password`, `groups`, `position`, `group_task`, `individ_task`, `task_status_indi`) VALUES
 ('admin', 'admin', 'admin', 'admin', '', '', ''),
-('philip', '1234', 'server', 'leader', 'server_maintenace', '', ''),
-('amoy', '1234', 'computer_lab_tech', 'member', '', 'network_ict_dept', '20'),
-('boyit', '1234', 'computer_lab_tech', 'member', '', 'network_simlab', '60'),
-('alex', 'admin', 'admin', 'admin', '', '', ''),
-('lyndon', '1234', 'admin_tech', 'leader', 'admin_task', '', ''),
-('reintje', '1234', 'computer_lab_tech', 'leader', 'networking', '', ''),
-('brian', '1234', 'telephone_tech', 'leader', 'resolve_telephone', '', ''),
-('rex', '1234', 'telephone_tech', 'member', '', '', ''),
-('smith', '1234', 'admin_tech', 'member', '', '', ''),
-('bryan', '1234', 'server', 'member', '', 'backup_all_files', '10'),
-('mendoza', '1234', 'admin_tech', 'member', '', '', '');
+
+('aman', '1234', 'admin_tech', 'member', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -108,13 +99,8 @@ CREATE TABLE `messaging` (
 --
 
 INSERT INTO `messaging` (`ctrl_no`, `date_send`, `to_receiver`, `from_sender`, `opened`, `mail_subject`, `message`) VALUES
-(260, '2009-10-15 20:26:20', 'boyit', 'reintje', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.'),
-(261, '2009-10-15 20:27:41', 'bryan', 'philip', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.'),
-(255, '2009-10-15 20:13:43', 'lyndon', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(256, '2009-10-15 20:13:44', 'reintje', 'alex', 1, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(257, '2009-10-15 20:13:44', 'philip', 'alex', 1, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(258, '2009-10-15 20:13:45', 'brian', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(259, '2009-10-15 20:26:19', 'amoy', 'reintje', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.');
+(258, '2019-10-15 20:13:45', 'brian', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
+(259, '2019-10-15 20:26:19', 'amoy', 'reintje', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.');
 
 -- --------------------------------------------------------
 
@@ -175,11 +161,6 @@ CREATE TABLE `sent_items` (
 --
 
 INSERT INTO `sent_items` (`ctrl_no`, `date_send`, `to_receiver`, `from_sender`, `opened`, `mail_subject`, `message`) VALUES
-(59, '2009-10-15 20:26:20', 'boyit', 'reintje', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.'),
-(58, '2009-10-15 20:26:19', 'amoy', 'reintje', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.'),
-(56, '2009-10-15 20:13:44', 'philip', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(57, '2009-10-15 20:13:45', 'brian', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
-(54, '2009-10-15 20:13:43', 'lyndon', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
 (55, '2009-10-15 20:13:44', 'reintje', 'alex', 0, ' notification', 'Administrator assigned you to be a leader. Go to TASK to know your task.'),
 (60, '2009-10-15 20:27:41', 'bryan', 'philip', 0, ' notification', 'Your leader give you task. Go to TASK to know your task.');
 
@@ -246,9 +227,6 @@ CREATE TABLE `user_profile` (
 --
 
 INSERT INTO `user_profile` (`email`, `username`, `password`, `fname`, `lname`, `verification_code`) VALUES
-('aquarius_1727@yahoo.com', 'admin', 'admin', 'admin', 'admin', 'admin'),
-('.....', 'alex', 'admin', 'alex', 'maureal', 'admin'),
-('b', 'brian', '1234', 'brian', 'torres', '21119'),
-('d', 'lyndon', '1234', 'lydon', 'baylin', '11382'),
+
 ('c', 'philip', '1234', 'philip', 'abamonga', '16298'),
 ('a', 'reintje', '1234', 'reintje', 'francisco', '30745');

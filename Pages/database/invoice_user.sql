@@ -1,3 +1,9 @@
+create database if not exists SEPM;
+
+use SEPM;
+
+drop table if exists invoice_user
+
 CREATE TABLE `invoice_user` (
 `id` int(11) NOT NULL,
 `email` varchar(100) NOT NULL,
@@ -6,4 +12,4 @@ CREATE TABLE `invoice_user` (
 `last_name` varchar(100) NOT NULL,
 `mobile` bigint(20) NOT NULL,
 `address` text NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ;
